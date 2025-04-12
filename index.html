@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=poppins:wght@300;500;700&diplay=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- Image Add -->
+        <div class="logo">
+            <img src="../Images.html/logo.png" class="logo-img">
+        </div>
+
+        <!-- Navigation Bar -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="hero">
+
+        <div class="content">
+            <h1>Hello, I'm <span>Vishal</span></h1>
+            <p>
+                I'm Passionate About Web Development And love Building Clean, Modern Websites That Not Only Look Good But Also perform Well
+            </p>
+
+
+            <p>
+                I Have A keen Eye For Design And User Experience. And I Strive To Make Every Website Responsive Interactive, And Optimized For All Devices
+            </p>
+
+
+            <p>
+                This is A Sticky Navigation Bar Demo Built Using HTML And CSS. Scroll Down To See The Effect And How The Navbar Stays Fixed On The Top
+
+            </p>
+
+            <p>
+                Currently, I'm learning New Technologies And frameWorks like React.js And Node.js To Level Up My Skills And Build Full-stack applications
+            </p>
+
+            <p>
+                Let's Create Something Awesome Together. Whether You Need A PErsonal Portfolio, A Business Site, Or A Landing Page ---I Can Help!
+            </p>
+
+            <!-- Social Media Add -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/18Txo9UCDE/" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/vishalsoni2327?igsh=MWNqZTYydHoyYm8ydA==" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/vishal-soni-b454a2294" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/vishal-soni-b454a2294" class="github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Image Add -->
+        <div class="profile-pic">
+            <img src="../Images.html/Vishal.jpg" alt="My Image">
+        </div>
+    </section>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
